@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/map-react/static/css/main.d1f3d138.chunk.css",
+    "main.js": "/map-react/static/js/main.277d84d8.chunk.js",
+    "main.js.map": "/map-react/static/js/main.277d84d8.chunk.js.map",
+    "runtime-main.js": "/map-react/static/js/runtime-main.e775e659.js",
+    "runtime-main.js.map": "/map-react/static/js/runtime-main.e775e659.js.map",
+    "static/js/2.d8d06828.chunk.js": "/map-react/static/js/2.d8d06828.chunk.js",
+    "static/js/2.d8d06828.chunk.js.map": "/map-react/static/js/2.d8d06828.chunk.js.map",
+    "static/js/3.9d1f224c.chunk.js": "/map-react/static/js/3.9d1f224c.chunk.js",
+    "static/js/3.9d1f224c.chunk.js.map": "/map-react/static/js/3.9d1f224c.chunk.js.map",
+    "index.html": "/map-react/index.html",
+    "static/css/main.d1f3d138.chunk.css.map": "/map-react/static/css/main.d1f3d138.chunk.css.map",
+    "static/js/2.d8d06828.chunk.js.LICENSE.txt": "/map-react/static/js/2.d8d06828.chunk.js.LICENSE.txt",
+    "static/media/pin.218b2e3e.svg": "/map-react/static/media/pin.218b2e3e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e775e659.js",
+    "static/js/2.d8d06828.chunk.js",
+    "static/css/main.d1f3d138.chunk.css",
+    "static/js/main.277d84d8.chunk.js"
+  ]
+}
