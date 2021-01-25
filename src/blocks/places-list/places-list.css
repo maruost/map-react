@@ -1,0 +1,6 @@
+.places-list {
+  width: 30%;
+  overflow: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: black white;
+}

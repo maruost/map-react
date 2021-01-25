@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Map from "./components/Map";
+import * as points from "./data/points.json";
+import { Route } from "react-router-dom";
+import Intro from "./components/Intro";
+import PlacesList from "./components/PlacesList";
 
-function App() {
+export default function App() {
+  const [selectedPoint, setSelectedPoint] = React.useState(null);
+
+  function handlePoints(point) {
+    setSelectedPoint(point);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path="/">
+        <Intro />
+      </Route>
+      <Route exact path="/map">
+        <div className="map-page">
+          <PlacesList points={points.features} />
+          <Map
+            onSelect={handlePoints}
+            points={points.features}
+            selectedPoint={selectedPoint}
+          />
+        </div>
+      </Route>
     </div>
   );
 }
-
-export default App;

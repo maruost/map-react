@@ -1,0 +1,11 @@
+.intro {
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.intro__wrapper {
+  display: grid;
+  place-items: center;
+}
