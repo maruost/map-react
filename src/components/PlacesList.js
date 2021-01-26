@@ -7,6 +7,7 @@ export default function PlacesList(props) {
       {props.points.map((point, i) => {
         return (
           <Place
+            key={i}
             name={point.properties.name}
             rating={point.properties.rating}
             onSelect={props.onSelect}
