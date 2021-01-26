@@ -1,7 +1,6 @@
 {
   "name": "strelka-map",
   "version": "0.1.0",
-  "private": true,
   "homepage": "http://maruost.github.io/map-react",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",

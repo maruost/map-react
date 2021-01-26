@@ -13,10 +13,6 @@ export default function Map(props) {
     zoom: 10,
   });
 
-  // hideMarkers () {
-
-  // }
-
   return (
     <div className="map">
       <ReactMapGL
