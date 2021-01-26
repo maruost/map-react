@@ -3,4 +3,48 @@
   overflow: scroll;
   scrollbar-width: thin;
   scrollbar-color: black white;
+  background-color: #1e1e1e;
 }
+
+.places-list__point {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #1e1e1e;
+  border-bottom: 0.5px solid rgb(151, 151, 151, 0.2);
+  padding: 15px 20px;
+}
+
+.places-list__name {
+  padding: 0 0;
+  margin: 0 0;
+  color: rgb(196, 196, 196);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.places-list__rating {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-top: 5px;
+}
+
+.places-list__rate {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 0px 10px 3px 0px;
+  color: rgb(173, 173, 173);
+  margin: 0 0;
+  line-height: 1;
+}
+
+.places-list__point:hover {
+  background-color: rgb(151, 151, 151, 0.2);
+}
+
+/* .places-list__point:nth-child(even) {
+  background-color: rgb(187, 187, 187);
+} */

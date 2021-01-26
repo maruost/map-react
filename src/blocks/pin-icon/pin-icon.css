@@ -1,0 +1,11 @@
+.pin-icon {
+  width: 25px;
+  height: 25px;
+  /* background-size: cover;
+  background-repeat: no-repeat; */
+}
+
+.pin-icon:hover {
+  width: 30px;
+  height: 30px;
+}

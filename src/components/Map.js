@@ -1,6 +1,7 @@
 import React from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
-import pinIcon from "../images/pin.svg";
+import pinIcon from "../vendor/images/pin.png";
+import pinIconGrey from "../vendor/images/pin-grey.png";
 import StarRatings from "react-star-ratings";
 
 export default function Map(props) {
@@ -13,7 +14,7 @@ export default function Map(props) {
   });
 
   // hideMarkers () {
-      
+
   // }
 
   return (
@@ -39,11 +40,14 @@ export default function Map(props) {
                 props.onSelect(point);
               }}
             >
-              <img src={pinIcon} alt="Place Icon" />
+              <img
+                className="pin-icon"
+                src={point === props.selectedPoint ? pinIcon : pinIconGrey}
+                alt="Place Icon"
+              />
             </button>
           </Marker>
         ))}
-
         {props.selectedPoint ? (
           <Popup
             latitude={props.selectedPoint.geometry.coordinates[1]}
@@ -53,15 +57,22 @@ export default function Map(props) {
             }}
           >
             <div>
-              <h2>{props.selectedPoint.properties.name}</h2>
-              <StarRatings
-                rating={props.selectedPoint.properties.rating}
-                starRatedColor="blue"
-                numberOfStars={5}
-                name="rating"
-                starDimension="20px"
-                starSpacing="5px"
-              />
+              <h2 className="popup__point-name">
+                {props.selectedPoint.properties.name}
+              </h2>
+              <div className="popup__point-rating">
+                <p className="popup__point-rate">
+                  {props.selectedPoint.properties.rating}
+                </p>
+                <StarRatings
+                  rating={props.selectedPoint.properties.rating}
+                  starRatedColor="rgb(109, 122, 130)"
+                  numberOfStars={5}
+                  name="rating"
+                  starDimension="12px"
+                  starSpacing="1px"
+                />
+              </div>
             </div>
           </Popup>
         ) : null}

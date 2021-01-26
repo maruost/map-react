@@ -9,6 +9,8 @@ export default function PlacesList(props) {
           <Place
             name={point.properties.name}
             rating={point.properties.rating}
+            onSelect={props.onSelect}
+            point={point}
           />
         );
       })}

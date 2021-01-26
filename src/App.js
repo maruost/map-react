@@ -19,12 +19,12 @@ export default function App() {
       </Route>
       <Route exact path="/map">
         <div className="map-page">
-          <PlacesList points={points.features} />
+          <PlacesList points={points.features} onSelect={handlePoints} />
           <Map
             onSelect={handlePoints}
             points={points.features}
             selectedPoint={selectedPoint}
-          />
+          ></Map>
         </div>
       </Route>
     </div>

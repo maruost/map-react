@@ -3,16 +3,26 @@ import StarRatings from "react-star-ratings";
 
 export default function Place(props) {
   return (
-    <div className="places-list__point">
+    <div
+      className="places-list__point"
+      onClick={(e) => {
+        e.preventDefault();
+        props.onSelect(props.point);
+      }}
+    >
       <p className="places-list__name">{props.name}</p>
-      <StarRatings
-        rating={props.rating}
-        starRatedColor="blue"
-        numberOfStars={5}
-        name="rating"
-        starDimension="20px"
-        starSpacing="5px"
-      />
+      <div className="places-list__rating">
+        <p className="places-list__rate">{props.rating}</p>
+        <StarRatings
+          rating={props.rating}
+          starRatedColor="rgb(196, 196, 196)"
+          starEmptyColor="rgb(109, 122, 130)"
+          numberOfStars={5}
+          name="rating"
+          starDimension="15px"
+          starSpacing="3px"
+        />
+      </div>
     </div>
   );
 }

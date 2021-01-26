@@ -1,7 +1,14 @@
+@import url(./vendor/fonts.css);
+@import url(./vendor/normalize.css);
+@import url(./blocks/button/button.css);
 @import url(./blocks/map-page/map-page.css);
 @import url(./blocks/map/map.css);
 @import url(./blocks/places-list/places-list.css);
 @import url(./blocks/intro/intro.css);
+@import url(./blocks/neon/neon.css);
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/pin-icon/pin-icon.css);
+@import url(./blocks/marker-btn/marker-btn.css);
 
 body {
   margin: 0;
@@ -15,4 +22,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100%;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 153, 0, 0.8);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(255, 153, 0, 0.4);
 }
