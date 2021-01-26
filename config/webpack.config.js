@@ -405,6 +405,7 @@ module.exports = function (webpackEnv) {
                     },
                   ],
                 ],
+                ignore: [ './node_modules/mapbox-gl/mapbox-gl.js' ],
 
                 plugins: [
                   [
