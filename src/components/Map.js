@@ -3,6 +3,7 @@ import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import pinIcon from "../vendor/images/pin.png";
 import pinIconGrey from "../vendor/images/pin-grey.png";
 import StarRatings from "react-star-ratings";
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 export default function Map(props) {
   const [viewport, setViewport] = React.useState({

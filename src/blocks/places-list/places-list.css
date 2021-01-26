@@ -2,7 +2,7 @@
   width: 30%;
   overflow: scroll;
   scrollbar-width: thin;
-  scrollbar-color: black white;
+  scrollbar-color: rgba(255, 153, 0, 0.8) #1e1e1e;
   background-color: #1e1e1e;
 }
 
