@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/map-react/static/css/main.43785af3.chunk.css",
-    "main.js": "/map-react/static/js/main.1d30ac77.chunk.js",
-    "main.js.map": "/map-react/static/js/main.1d30ac77.chunk.js.map",
+    "main.js": "/map-react/static/js/main.854b783d.chunk.js",
+    "main.js.map": "/map-react/static/js/main.854b783d.chunk.js.map",
     "runtime-main.js": "/map-react/static/js/runtime-main.4576acd5.js",
     "runtime-main.js.map": "/map-react/static/js/runtime-main.4576acd5.js.map",
     "static/css/2.bdb85385.chunk.css": "/map-react/static/css/2.bdb85385.chunk.css",
@@ -17,13 +17,13 @@
     "static/js/mapbox-gl-csp-worker.516a7f39.worker.js": "/map-react/static/js/mapbox-gl-csp-worker.516a7f39.worker.js",
     "static/js/mapbox-gl-csp-worker.516a7f39.worker.js.map": "/map-react/static/js/mapbox-gl-csp-worker.516a7f39.worker.js.map",
     "static/media/index.css": "/map-react/static/media/Roboto-Regular.03523cf5.ttf",
-    "static/media/boat.03bc323b.jpg": "/map-react/static/media/boat.03bc323b.jpg"
+    "static/media/boat.b9e887e7.jpg": "/map-react/static/media/boat.b9e887e7.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4576acd5.js",
     "static/css/2.bdb85385.chunk.css",
     "static/js/2.0d4893d4.chunk.js",
     "static/css/main.43785af3.chunk.css",
-    "static/js/main.1d30ac77.chunk.js"
+    "static/js/main.854b783d.chunk.js"
   ]
 }
