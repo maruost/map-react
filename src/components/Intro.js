@@ -10,10 +10,8 @@ export default function Intro() {
             Туристические <br />
             <span>точки притяжения</span> Калининграда
           </h1>
-          <NavLink exact to="/map">
-            <button className="button button_size_big">
-              Перейти к карте
-            </button>
+          <NavLink exact to={process.env.PUBLIC_URL + "/map"}>
+            <button className="button button_size_big">Перейти к карте</button>
           </NavLink>
         </div>
       </div>
