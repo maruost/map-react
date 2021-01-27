@@ -1,9 +1,13 @@
 import React from "react";
-import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import pinIcon from "../vendor/images/pin.png";
 import pinIconGrey from "../vendor/images/pin-grey.png";
 import StarRatings from "react-star-ratings";
-import 'mapbox-gl/dist/mapbox-gl.css';
+import "mapbox-gl/dist/mapbox-gl.css";
+import ReactMapGL, { Marker, Popup } from "react-map-gl";
+import mapboxgl from "mapbox-gl"; // This is a dependency of react-map-gl even if you didn't explicitly install it
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require("worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker").default;
 
 export default function Map(props) {
   const [viewport, setViewport] = React.useState({
