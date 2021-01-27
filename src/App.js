@@ -17,7 +17,7 @@ export default function App() {
       <Route exact path={process.env.PUBLIC_URL + "/"}>
         <Intro />
       </Route>
-      <Route exact path={process.env.PUBLIC_URL + "/map"}>
+      <Route exact path={"/map"}>
         <div className="map-page">
           <PlacesList points={points.features} onSelect={handlePoints} />
           <Map
