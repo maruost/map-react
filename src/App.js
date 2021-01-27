@@ -14,10 +14,10 @@ export default function App() {
 
   return (
     <div className="App">
-      <Route exact path="/">
+      <Route exact path={process.env.PUBLIC_URL + "/"}>
         <Intro />
       </Route>
-      <Route exact path="/map">
+      <Route exact path={process.env.PUBLIC_URL + "/map"}>
         <div className="map-page">
           <PlacesList points={points.features} onSelect={handlePoints} />
           <Map
